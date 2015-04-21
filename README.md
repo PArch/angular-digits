@@ -2,12 +2,15 @@
 
 This is an angular wrapper for [twitter fabric's digits sdk](https://dev.twitter.com/twitter-kit/web/digits). It bridges the gap between Angular's digest cycle and the foreign SDK by applying the asynchronous events to the digest cycle. It also provides convenient models to provide insight to the responses from the API (if the workflow was closed by the user, popup was blocked, etc).
 
-<script id="digits-sdk" src="https://cdn.digits.com/1/sdk.js" async></script>
 
 
 ## Example usage
 
 ```js
+<script id="digits-sdk" src="https://cdn.digits.com/1/sdk.js" async></script>
+
+
+
 angular.module('app', ['atticoos.digits'])
 
 .config(function (DigitsProvider) {
